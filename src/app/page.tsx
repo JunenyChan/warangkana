@@ -242,8 +242,8 @@ export default function Home() {
                       src={work.image}
                       alt={work.title}
                       width={400} 
-                      height={250}
-                      className="w-full h-64 object-cover"
+                      // height={250}
+                      className="w-full h-full object-cover"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
                       <div className="absolute bottom-4 left-4 text-white">
