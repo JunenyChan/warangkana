@@ -56,7 +56,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100">
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 ">
       {/* Navbar - Fixed and Modern */}
       <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-sm shadow-sm z-50">
         <div className="container mx-auto px-4">
@@ -77,7 +77,7 @@ export default function Home() {
         </div>
       </nav>
 
-      <main>
+      <main className="container-sm mx-auto px-4">
         {/* Hero Section */}
         <div className="pt-16"></div> {/* Spacer for fixed navbar */}
 
