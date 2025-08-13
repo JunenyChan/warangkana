@@ -289,7 +289,7 @@ export default function Home() {
                   </button>
                 </div>
                 
-                <div className="relative mb-6">
+                <div className="relative h-50vh mb-6">
                   <Image 
                     src={selectedWork.image}
                     alt={selectedWork.title}
@@ -358,7 +358,7 @@ export default function Home() {
                   alt="Google Applications Certificate"
                   width={400} 
                   // height={500}
-                  className="w-full h-64 object-cover"
+                  className="w-full  object-cover"
                 />
                 <div className="p-8">
                   <h3 className="text-2xl font-semibold mb-4">การเพิ่มประสิทธิภาพการทำงานด้วย Google Applications</h3>
@@ -380,7 +380,7 @@ export default function Home() {
                   alt="UX/UI Design Certificate"
                   width={400} 
                   // height={500}
-                  className="w-full h-64 object-cover"
+                  className="w-full  object-cover"
                 />
                 <div className="p-8">
                   <h3 className="text-2xl font-semibold mb-4">การออกแบบ UX/UI</h3>
