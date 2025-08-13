@@ -289,12 +289,12 @@ export default function Home() {
                   </button>
                 </div>
                 
-                <div className="relative h-50vh mb-6">
+                <div className="relative h-full mb-6">
                   <Image 
                     src={selectedWork.image}
                     alt={selectedWork.title}
                     fill
-                    className=" rounded-lg object-cover"
+                    className=" rounded-lg h-full object-cover"
                   />
                 </div>
 
@@ -358,7 +358,7 @@ export default function Home() {
                   alt="Google Applications Certificate"
                   width={400} 
                   // height={500}
-                  className="w-full  object-cover"
+                  className="w-full   object-cover"
                 />
                 <div className="p-8">
                   <h3 className="text-2xl font-semibold mb-4">การเพิ่มประสิทธิภาพการทำงานด้วย Google Applications</h3>
