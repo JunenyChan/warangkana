@@ -294,7 +294,7 @@ export default function Home() {
                     src={selectedWork.image}
                     alt={selectedWork.title}
                     fill
-                    className=" rounded-lg h-full object-cover"
+                    className=" rounded-lg object-cover"
                   />
                 </div>
 
