@@ -289,12 +289,12 @@ export default function Home() {
                   </button>
                 </div>
                 
-                <div className="relative h-64 mb-6">
+                <div className="relative h-full mb-6">
                   <Image 
                     src={selectedWork.image}
                     alt={selectedWork.title}
                     fill
-                    className="rounded-lg object-cover"
+                    className=" rounded-lg object-cover"
                   />
                 </div>
 
@@ -357,7 +357,7 @@ export default function Home() {
                   src="/certificates/cert1.jpg"
                   alt="Google Applications Certificate"
                   width={400} 
-                  height={250}
+                  height={500}
                   className="w-full h-64 object-cover"
                 />
                 <div className="p-8">
@@ -379,7 +379,7 @@ export default function Home() {
                   src="/certificates/cert2.jpg"
                   alt="UX/UI Design Certificate"
                   width={400} 
-                  height={250}
+                  height={500}
                   className="w-full h-64 object-cover"
                 />
                 <div className="p-8">
