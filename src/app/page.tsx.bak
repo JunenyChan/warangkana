@@ -11,6 +11,39 @@ interface Work {
   event: string;
   image: string;
   details: string[];
+}        {/* Profile Image */}
+        <section className="min-h-screen bg-white flex items-center justify-center">
+          <div className="container mx-auto px-4">
+            <div className="flex flex-col items-center justify-center">
+              <div className="relative mb-8">
+                <div className="absolute -inset-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full blur opacity-25"></div>
+                <Image 
+                  src="/profile.jpg" 
+                  alt="Profile" 
+                  width={400} 
+                  height={400} 
+                  className="relative rounded-full shadow-xl border-4 border-white"
+                />
+              </div>
+              <h1 className="text-4xl font-bold text-center bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-4">
+                Warangkana Jeeaey
+              </h1>
+              <p className="text-xl text-gray-600 text-center">
+                Web Developer & IoT Enthusiast
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* About */}
+        <section id="about" className="bg-white py-20"{
+  id: number;
+  title: string;
+  subtitle: string;
+  description: string;
+  event: string;
+  image: string;
+  details: string[];
 }
 
 export default function Home() {
@@ -67,7 +100,6 @@ export default function Home() {
             <div className="hidden md:block">
               <ul className="flex space-x-8">
                 <li><a href="#about" className="text-gray-600 hover:text-purple-600 transition-colors">About</a></li>
-                <li><a href="#experience" className="text-gray-600 hover:text-purple-600 transition-colors">Experience</a></li>
                 <li><a href="#works" className="text-gray-600 hover:text-purple-600 transition-colors">Works</a></li>
                 <li><a href="#certificates" className="text-gray-600 hover:text-purple-600 transition-colors">Certificates</a></li>
                 <li><a href="#contact" className="text-gray-600 hover:text-purple-600 transition-colors">Contact</a></li>
@@ -78,29 +110,34 @@ export default function Home() {
       </nav>
 
       <main>
-        {/* Hero Section */}
+        {/* Hero Section with Profile Image */}
         <div className="pt-16"></div> {/* Spacer for fixed navbar */}
+        
+        {/* Profile Image */}
+        <section className="py-20 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="flex justify-center">
+              <div className="relative">
+                <div className="absolute -inset-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full blur opacity-25"></div>
+                <Image 
+                  src="/profile.jpg" 
+                  alt="Profile" 
+                  width={300} 
+                  height={300} 
+                  className="relative rounded-full shadow-xl border-4 border-white"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* About */}
-        <section id="about" className="min-h-screen bg-white py-20">
+        <section id="about" className="bg-white py-20">
           <div className="container mx-auto px-4">
-            <div className="flex flex-col lg:flex-row items-center gap-12">
-              <div className="lg:w-1/3">
-                <div className="relative">
-                  <div className="absolute -inset-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full blur opacity-25"></div>
-                  <Image 
-                    src="/profile.jpg" 
-                    alt="Profile" 
-                    width={300} 
-                    height={300} 
-                    className="relative rounded-full shadow-xl border-4 border-white"
-                  />
-                </div>
-              </div>
-              <div className="lg:w-2/3">
-                <h1 className="text-4xl md:text-5xl font-bold mb-8 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-                  About me
-                </h1>
+            <div className="max-w-4xl mx-auto">
+              <h1 className="text-4xl md:text-5xl font-bold mb-8 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent text-center">
+                About me
+              </h1>
                 <div className="space-y-8">
                   <div className="bg-gradient-to-r from-purple-50 to-pink-50 p-6 rounded-xl">
                     <h2 className="text-2xl font-semibold text-purple-700 mb-4">สวัสดีค่ะ 👋</h2>
@@ -123,6 +160,68 @@ export default function Home() {
                       <p className="indent-8">
                         I have a particular interest in <span className="font-medium text-purple-700">Internet of Things (IoT)</span> technology, as I believe it can be applied to improve daily life and society in meaningful ways. I also have hands-on experience working with microcontrollers such as <span className="font-medium text-pink-600">Arduino</span>, along with a solid understanding of basic electronics.
                       </p>
+                    </div>
+                  </div>
+
+                  <div className="bg-gradient-to-r from-purple-50 to-pink-50 p-6 rounded-xl">
+                    <h2 className="text-2xl font-semibold text-purple-700 mb-4">ประสบการณ์การทำงาน 💼</h2>
+                    <div className="space-y-6 text-gray-600">
+                      <div className="space-y-2">
+                        <h3 className="text-lg font-medium text-purple-700">1. ผู้ช่วยธุรการ – ธนาคารเพื่อการเกษตรและสหกรณ์การเกษตร (อำเภอแม่ทะ) | ปี 2560</h3>
+                        <ul className="list-disc pl-5 space-y-1">
+                          <li>พิมพ์และบันทึกข้อมูลของผู้มาใช้บริการ</li>
+                          <li>ให้ความช่วยเหลือเมื่อคอมพิวเตอร์มีปัญหาขัดข้อง</li>
+                          <li>สนับสนุนการทำงานของเจ้าหน้าที่ด้านงานธุรการ</li>
+                        </ul>
+                      </div>
+                      <div className="space-y-2">
+                        <h3 className="text-lg font-medium text-purple-700">2. ผู้ช่วยช่าง – บริษัท ทูลนิก จำกัด (อำเภอเมืองลำปาง) | ปี 2562</h3>
+                        <ul className="list-disc pl-5 space-y-1">
+                          <li>ตรวจสอบและซ่อมแซมระบบคอมพิวเตอร์ของหน่วยงานต่าง ๆ</li>
+                          <li>ปฏิบัติงานทั้งในจังหวัดลำปางและต่างจังหวัด</li>
+                          <li>เรียนรู้การแก้ไขปัญหาด้านฮาร์ดแวร์และซอฟต์แวร์</li>
+                        </ul>
+                      </div>
+                      <div className="space-y-2">
+                        <h3 className="text-lg font-medium text-purple-700">3. เจ้าหน้าที่รับคำร้อง – บริษัท ทาเลส ดีไอเอส จำกัด | ปี 2563 - 2564</h3>
+                        <p className="text-sm text-purple-600 mb-2">(ร่วมงานกับกรมการกงสุล กระทรวงการต่างประเทศ)</p>
+                        <ul className="list-disc pl-5 space-y-1">
+                          <li>ตรวจสอบความถูกต้องของเอกสารและข้อมูลส่วนบุคคล</li>
+                          <li>ให้คำแนะนำเกี่ยวกับขั้นตอนการดำเนินการทำหนังสือเดินทาง</li>
+                          <li>บันทึกข้อมูลเข้าสู่ระบบทะเบียนหนังสือเดินทาง</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-gradient-to-r from-purple-50 to-pink-50 p-6 rounded-xl">
+                    <h2 className="text-2xl font-semibold text-purple-700 mb-4">Work Experience 💼</h2>
+                    <div className="space-y-6 text-gray-600">
+                      <div className="space-y-2">
+                        <h3 className="text-lg font-medium text-purple-700">1. Administrative Assistant – BAAC (Mae Tha District) | 2017</h3>
+                        <ul className="list-disc pl-5 space-y-1">
+                          <li>Typed and recorded customer service data</li>
+                          <li>Provided assistance when computer systems encountered issues</li>
+                          <li>Supported administrative tasks for the branch office</li>
+                        </ul>
+                      </div>
+                      <div className="space-y-2">
+                        <h3 className="text-lg font-medium text-purple-700">2. Technical Assistant – Toolnic Co., Ltd. (Mueang Lampang) | 2019</h3>
+                        <ul className="list-disc pl-5 space-y-1">
+                          <li>Inspected and repaired computer systems for various organizations</li>
+                          <li>Worked both within Lampang Province and in other provinces</li>
+                          <li>Gained practical skills in troubleshooting hardware and software problems</li>
+                        </ul>
+                      </div>
+                      <div className="space-y-2">
+                        <h3 className="text-lg font-medium text-purple-700">3. Application Officer – Thales DIS Co., Ltd. | 2020 - 2021</h3>
+                        <p className="text-sm text-purple-600 mb-2">(In collaboration with the Department of Consular Affairs, Ministry of Foreign Affairs)</p>
+                        <ul className="list-disc pl-5 space-y-1">
+                          <li>Verified the accuracy of documents and personal data of applicants</li>
+                          <li>Provided guidance on the passport application process</li>
+                          <li>Recorded applicant information into the passport registration system</li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
 
@@ -158,78 +257,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Experience */}
-        <section id="experience" className="py-20 bg-gray-50">
-          <div className="container mx-auto px-4">
-            <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-              Work Experience
-            </h2>
-            <div className="max-w-4xl mx-auto space-y-8">
-              <div className="bg-white rounded-xl shadow-lg p-6">
-                <h2 className="text-2xl font-semibold text-purple-700 mb-4">ประสบการณ์การทำงาน 💼</h2>
-                <div className="space-y-6 text-gray-600">
-                  <div className="space-y-2">
-                    <h3 className="text-lg font-medium text-purple-700">1. ผู้ช่วยธุรการ – ธนาคารเพื่อการเกษตรและสหกรณ์การเกษตร (อำเภอแม่ทะ) | ปี 2560</h3>
-                    <ul className="list-disc pl-5 space-y-1">
-                      <li>พิมพ์และบันทึกข้อมูลของผู้มาใช้บริการ</li>
-                      <li>ให้ความช่วยเหลือเมื่อคอมพิวเตอร์มีปัญหาขัดข้อง</li>
-                      <li>สนับสนุนการทำงานของเจ้าหน้าที่ด้านงานธุรการ</li>
-                    </ul>
-                  </div>
-                  <div className="space-y-2">
-                    <h3 className="text-lg font-medium text-purple-700">2. ผู้ช่วยช่าง – บริษัท ทูลนิก จำกัด (อำเภอเมืองลำปาง) | ปี 2562</h3>
-                    <ul className="list-disc pl-5 space-y-1">
-                      <li>ตรวจสอบและซ่อมแซมระบบคอมพิวเตอร์ของหน่วยงานต่าง ๆ</li>
-                      <li>ปฏิบัติงานทั้งในจังหวัดลำปางและต่างจังหวัด</li>
-                      <li>เรียนรู้การแก้ไขปัญหาด้านฮาร์ดแวร์และซอฟต์แวร์</li>
-                    </ul>
-                  </div>
-                  <div className="space-y-2">
-                    <h3 className="text-lg font-medium text-purple-700">3. เจ้าหน้าที่รับคำร้อง – บริษัท ทาเลส ดีไอเอส จำกัด | ปี 2563 - 2564</h3>
-                    <p className="text-sm text-purple-600 mb-2">(ร่วมงานกับกรมการกงสุล กระทรวงการต่างประเทศ)</p>
-                    <ul className="list-disc pl-5 space-y-1">
-                      <li>ตรวจสอบความถูกต้องของเอกสารและข้อมูลส่วนบุคคล</li>
-                      <li>ให้คำแนะนำเกี่ยวกับขั้นตอนการดำเนินการทำหนังสือเดินทาง</li>
-                      <li>บันทึกข้อมูลเข้าสู่ระบบทะเบียนหนังสือเดินทาง</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-white rounded-xl shadow-lg p-6">
-                <h2 className="text-2xl font-semibold text-purple-700 mb-4">Work Experience 💼</h2>
-                <div className="space-y-6 text-gray-600">
-                  <div className="space-y-2">
-                    <h3 className="text-lg font-medium text-purple-700">1. Administrative Assistant – BAAC (Mae Tha District) | 2017</h3>
-                    <ul className="list-disc pl-5 space-y-1">
-                      <li>Typed and recorded customer service data</li>
-                      <li>Provided assistance when computer systems encountered issues</li>
-                      <li>Supported administrative tasks for the branch office</li>
-                    </ul>
-                  </div>
-                  <div className="space-y-2">
-                    <h3 className="text-lg font-medium text-purple-700">2. Technical Assistant – Toolnic Co., Ltd. (Mueang Lampang) | 2019</h3>
-                    <ul className="list-disc pl-5 space-y-1">
-                      <li>Inspected and repaired computer systems for various organizations</li>
-                      <li>Worked both within Lampang Province and in other provinces</li>
-                      <li>Gained practical skills in troubleshooting hardware and software problems</li>
-                    </ul>
-                  </div>
-                  <div className="space-y-2">
-                    <h3 className="text-lg font-medium text-purple-700">3. Application Officer – Thales DIS Co., Ltd. | 2020 - 2021</h3>
-                    <p className="text-sm text-purple-600 mb-2">(In collaboration with the Department of Consular Affairs, Ministry of Foreign Affairs)</p>
-                    <ul className="list-disc pl-5 space-y-1">
-                      <li>Verified the accuracy of documents and personal data of applicants</li>
-                      <li>Provided guidance on the passport application process</li>
-                      <li>Recorded applicant information into the passport registration system</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* Works */}
         <section id="works" className="py-20 bg-gray-50">
           <div className="container mx-auto px-4">
@@ -243,7 +270,7 @@ export default function Home() {
                       alt={work.title}
                       width={400} 
                       height={250}
-                      className="w-full h-64 object-cover"
+                      className="w-full h-48 object-cover"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
                       <div className="absolute bottom-4 left-4 text-white">
@@ -252,9 +279,9 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <div className="p-8">
-                    <h3 className="text-2xl font-semibold text-purple-700 mb-4">{work.title}</h3>
-                    <p className="text-gray-600 mb-6">{work.description}</p>
+                  <div className="p-6">
+                    <h3 className="text-xl font-semibold text-purple-700 mb-2">{work.title}</h3>
+                    <p className="text-gray-600 mb-4">{work.description}</p>
                     <div className="flex items-center text-sm text-gray-500 mb-4">
                       <span className="mr-2">🏆</span>
                       <span>{work.event}</span>
@@ -301,37 +328,13 @@ export default function Home() {
                 <div className="space-y-4">
                   <div className="bg-purple-50 rounded-lg p-4">
                     <h4 className="font-semibold text-purple-700 mb-2">รายละเอียดโครงการ</h4>
-                    <p className="text-gray-600 mb-4">{selectedWork.description}</p>
-                    <h4 className="font-semibold text-purple-700 mb-2">Project Description</h4>
-                    <p className="text-gray-600">
-                      {selectedWork.id === 1 
-                        ? "Ms. Warangkana Jeeaey from Lampang Technical College received a commendation award with a bronze medal. The award was for an invention in Category 6, which is for software innovation and embedded systems. The invention is named 'Myna bird repelling machine in the community'. The competition was called 'VEC THAILAND' and 'Outstanding Vocational Innovation'."
-                        : "Ms. Warangkana Jeeaey from Lampang Technical College received the second runner-up award with a bronze medal in Category 9. The invention was a specific-task-based invention, a control set using the Internet of Things (IoT) for the community. The project was named 'Donate IOT'. The competition was the 'Outstanding Vocational Innovation' at the provincial level in Lampang."}
-                    </p>
+                    <p className="text-gray-600">{selectedWork.description}</p>
                   </div>
 
                   <div className="bg-pink-50 rounded-lg p-4">
                     <h4 className="font-semibold text-pink-700 mb-2">ประเด็นสำคัญ</h4>
-                    <ul className="list-disc list-inside space-y-2 mb-4">
-                      {selectedWork.details.map((detail, index) => (
-                        <li key={index} className="text-gray-600">{detail}</li>
-                      ))}
-                    </ul>
-                    <h4 className="font-semibold text-pink-700 mb-2">Key Features</h4>
                     <ul className="list-disc list-inside space-y-2">
-                      {selectedWork.id === 1 ? [
-                        "Developed an automated control system for repelling myna birds in agricultural areas",
-                        "Utilized motion sensor technology and sound systems",
-                        "Controlled through Arduino microcontroller",
-                        "Helped reduce crop damage in the community"
-                      ].map((detail, index) => (
-                        <li key={index} className="text-gray-600">{detail}</li>
-                      )) : [
-                        "Developed a smart donation system using IoT technology",
-                        "Real-time donation status tracking and reporting system",
-                        "Integrated sensor technology with internet connectivity",
-                        "Streamlined donation management in the community"
-                      ].map((detail, index) => (
+                      {selectedWork.details.map((detail, index) => (
                         <li key={index} className="text-gray-600">{detail}</li>
                       ))}
                     </ul>
@@ -352,70 +355,25 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Certificates</h2>
             <div className="grid md:grid-cols-3 gap-8">
-              <div className="bg-gray-50 rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-2">
-                <Image 
-                  src="/certificates/cert1.jpg"
-                  alt="Google Applications Certificate"
-                  width={400} 
-                  height={250}
-                  className="w-full h-64 object-cover"
-                />
-                <div className="p-8">
-                  <h3 className="text-2xl font-semibold mb-4">การเพิ่มประสิทธิภาพการทำงานด้วย Google Applications</h3>
-                  <div className="space-y-4">
-                    <p className="text-gray-600">ผ่านการฝึกทักษะออนไลน์เกี่ยวกับการทำงานร่วมกันผ่านเครือข่ายอินเทอร์เน็ตโดยใช้ Google Applications</p>
-                    <p className="text-sm text-gray-500">Duration: 3.30 hours</p>
-                    <div className="flex items-center text-sm text-gray-500">
+              {[1, 2, 3].map((i) => (
+                <div key={i} className="bg-gray-50 rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-2">
+                  <Image 
+                    src={`/certificates/cert${i}.jpg`} 
+                    alt={`Certificate ${i}`} 
+                    width={400} 
+                    height={250}
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="p-6">
+                    <h3 className="text-xl font-semibold mb-2">เกียรติบัตร {i}</h3>
+                    <p className="text-gray-600">คำอธิบายรายละเอียดของเกียรติบัตร {i}...</p>
+                    <div className="mt-4 flex items-center text-sm text-gray-500">
                       <span className="mr-2">🏆</span>
-                      <span>Issued by Department of Skill Development</span>
+                      <span>ได้รับเมื่อ: 2025</span>
                     </div>
-                    <div className="text-sm text-purple-600">August 25, 2024</div>
                   </div>
                 </div>
-              </div>
-
-              <div className="bg-gray-50 rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-2">
-                <Image 
-                  src="/certificates/cert2.jpg"
-                  alt="UX/UI Design Certificate"
-                  width={400} 
-                  height={250}
-                  className="w-full h-64 object-cover"
-                />
-                <div className="p-8">
-                  <h3 className="text-2xl font-semibold mb-4">การออกแบบ UX/UI</h3>
-                  <div className="space-y-4">
-                    <p className="text-gray-600">ผ่านการฝึกอบรมออนไลน์หลักสูตรการออกแบบประสบการณ์ผู้ใช้และส่วนติดต่อผู้ใช้</p>
-                    <p className="text-sm text-gray-500">Duration: 8 hours 30 minutes</p>
-                    <div className="flex items-center text-sm text-gray-500">
-                      <span className="mr-2">🏆</span>
-                      <span>Collaboration of DSD, DDF, and ATSI</span>
-                    </div>
-                    <div className="text-sm text-purple-600">October 1, 2024</div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-gray-50 rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-2">
-                <Image 
-                  src="/certificates/cert3.jpg"
-                  alt="IT Exit Exam Certificate"
-                  width={400} 
-                  height={250}
-                  className="w-full h-64 object-cover"
-                />
-                <div className="p-8">
-                  <h3 className="text-2xl font-semibold mb-4">IT Exit Exam</h3>
-                  <div className="space-y-4">
-                    <p className="text-gray-600">ผ่านการทดสอบมาตรฐานด้านเทคโนโลยีสารสนเทศสำหรับนักศึกษาชั้นปีจบ</p>
-                    <div className="flex items-center text-sm text-gray-500">
-                      <span className="mr-2">🏆</span>
-                      <span>RMUTL Chiang Mai</span>
-                    </div>
-                    <div className="text-sm text-purple-600">Academic Year 2025</div>
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </section>
@@ -450,7 +408,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-700">Address</h3>
-                    <p className="text-gray-600">159 Moo 1, Huasuea Sub-district, Mae Tha District, Lampang Province 52150</p>
+                    <p className="text-gray-600">159 หมู่ที่ 1 ต.หัวเสือ อ.แม่ทะ จ.ลำปาง 52150</p>
                   </div>
                 </div>
               </div>
