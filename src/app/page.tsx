@@ -67,6 +67,7 @@ export default function Home() {
             <div className="hidden md:block">
               <ul className="flex space-x-8">
                 <li><a href="#about" className="text-gray-600 hover:text-purple-600 transition-colors">About</a></li>
+                <li><a href="#skills" className="text-gray-600 hover:text-purple-600 transition-colors">Skills</a></li>
                 <li><a href="#experience" className="text-gray-600 hover:text-purple-600 transition-colors">Experience</a></li>
                 <li><a href="#works" className="text-gray-600 hover:text-purple-600 transition-colors">Works</a></li>
                 <li><a href="#certificates" className="text-gray-600 hover:text-purple-600 transition-colors">Certificates</a></li>
@@ -158,6 +159,127 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Computer Skills */}
+        <section id="skills" className="py-20 bg-white">
+          <div className="container mx-auto px-4">
+            <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Computer Skills</h2>
+            <div className="max-w-4xl mx-auto">
+              <div className="grid md:grid-cols-2 gap-8">
+                {/* Programming Languages */}
+                <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl shadow-lg p-6">
+                  <h3 className="text-2xl font-semibold text-purple-700 mb-6">Programming Languages</h3>
+                  <div className="space-y-4">
+                    <div>
+                      <div className="flex justify-between mb-2">
+                        <span className="text-gray-700 font-medium">Python</span>
+                        <span className="text-gray-500 text-sm">Advanced</span>
+                      </div>
+                      <div className="w-full bg-gray-200 rounded-full h-2">
+                        <div className="bg-gradient-to-r from-purple-600 to-pink-600 h-2 rounded-full" style={{width: '85%'}}></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div className="flex justify-between mb-2">
+                        <span className="text-gray-700 font-medium">JavaScript / TypeScript</span>
+                        <span className="text-gray-500 text-sm">Intermediate</span>
+                      </div>
+                      <div className="w-full bg-gray-200 rounded-full h-2">
+                        <div className="bg-gradient-to-r from-purple-600 to-pink-600 h-2 rounded-full" style={{width: '75%'}}></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div className="flex justify-between mb-2">
+                        <span className="text-gray-700 font-medium">C/C++</span>
+                        <span className="text-gray-500 text-sm">Intermediate</span>
+                      </div>
+                      <div className="w-full bg-gray-200 rounded-full h-2">
+                        <div className="bg-gradient-to-r from-purple-600 to-pink-600 h-2 rounded-full" style={{width: '70%'}}></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div className="flex justify-between mb-2">
+                        <span className="text-gray-700 font-medium">Arduino</span>
+                        <span className="text-gray-500 text-sm">Intermediate</span>
+                      </div>
+                      <div className="w-full bg-gray-200 rounded-full h-2">
+                        <div className="bg-gradient-to-r from-purple-600 to-pink-600 h-2 rounded-full" style={{width: '80%'}}></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Tools & Frameworks */}
+                <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl shadow-lg p-6">
+                  <h3 className="text-2xl font-semibold text-purple-700 mb-6">Tools & Frameworks</h3>
+                  <div className="space-y-4">
+                    <div>
+                      <div className="flex justify-between mb-2">
+                        <span className="text-gray-700 font-medium">React / Next.js</span>
+                        <span className="text-gray-500 text-sm">Intermediate</span>
+                      </div>
+                      <div className="w-full bg-gray-200 rounded-full h-2">
+                        <div className="bg-gradient-to-r from-purple-600 to-pink-600 h-2 rounded-full" style={{width: '75%'}}></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div className="flex justify-between mb-2">
+                        <span className="text-gray-700 font-medium">Tailwind CSS</span>
+                        <span className="text-gray-500 text-sm">Advanced</span>
+                      </div>
+                      <div className="w-full bg-gray-200 rounded-full h-2">
+                        <div className="bg-gradient-to-r from-purple-600 to-pink-600 h-2 rounded-full" style={{width: '85%'}}></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div className="flex justify-between mb-2">
+                        <span className="text-gray-700 font-medium">IoT & Embedded Systems</span>
+                        <span className="text-gray-500 text-sm">Advanced</span>
+                      </div>
+                      <div className="w-full bg-gray-200 rounded-full h-2">
+                        <div className="bg-gradient-to-r from-purple-600 to-pink-600 h-2 rounded-full" style={{width: '80%'}}></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div className="flex justify-between mb-2">
+                        <span className="text-gray-700 font-medium">Database (SQL, MongoDB)</span>
+                        <span className="text-gray-500 text-sm">Intermediate</span>
+                      </div>
+                      <div className="w-full bg-gray-200 rounded-full h-2">
+                        <div className="bg-gradient-to-r from-purple-600 to-pink-600 h-2 rounded-full" style={{width: '70%'}}></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Additional Skills */}
+              <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl shadow-lg p-6 mt-8">
+                <h3 className="text-2xl font-semibold text-purple-700 mb-6">Other Skills</h3>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="space-y-2">
+                    <h4 className="font-semibold text-purple-600">💻 Software</h4>
+                    <ul className="text-gray-600 space-y-1">
+                      <li>• Microsoft Office (Word, Excel, PowerPoint)</li>
+                      <li>• Adobe Creative Suite (Photoshop, Illustrator)</li>
+                      <li>• Figma (UI/UX Design)</li>
+                      <li>• Git & GitHub</li>
+                    </ul>
+                  </div>
+                  <div className="space-y-2">
+                    <h4 className="font-semibold text-purple-600">🌐 Other Competencies</h4>
+                    <ul className="text-gray-600 space-y-1">
+                      <li>• Problem Solving & Troubleshooting</li>
+                      <li>• Team Collaboration</li>
+                      <li>• Technical Documentation</li>
+                      <li>• IoT Project Development</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Experience */}
         <section id="experience" className="py-20 bg-gray-50">
           <div className="container mx-auto px-4">
@@ -234,7 +356,7 @@ export default function Home() {
         <section id="works" className="py-20 bg-gray-50">
           <div className="container mx-auto px-4">
             <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">My Works</h2>
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-12">
               {works.map((work) => (
                 <div key={work.id} className="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-2">
                   <div className="relative">
@@ -242,7 +364,7 @@ export default function Home() {
                       src={work.image}
                       alt={work.title}
                       width={400} 
-                      // height={250} 
+                      height={250}
                       className="w-full h-full object-cover"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
@@ -351,13 +473,13 @@ export default function Home() {
         <section id="certificates" className="py-20 bg-white">
           <div className="container mx-auto px-4">
             <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Certificates</h2>
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-2 gap-12 lg:grid-cols-3">
               <div className="bg-gray-50 rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-2">
                 <Image 
                   src="/certificates/cert1.jpg"
                   alt="Google Applications Certificate"
                   width={400} 
-                  // height={500}
+                  height={300}
                   className="w-full   object-cover"
                 />
                 <div className="p-8">
@@ -379,7 +501,7 @@ export default function Home() {
                   src="/certificates/cert2.jpg"
                   alt="UX/UI Design Certificate"
                   width={400} 
-                  // height={500}
+                  height={300}
                   className="w-full  object-cover"
                 />
                 <div className="p-8">
@@ -413,6 +535,46 @@ export default function Home() {
                       <span>RMUTL Chiang Mai</span>
                     </div>
                     <div className="text-sm text-purple-600">Academic Year 2025</div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-gray-50 rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-2">
+                <Image 
+                  src="/certificates/cer4.jpg"
+                  alt="Certificate 4"
+                  width={400} 
+                  height={250}
+                  className="w-full h-64 object-cover"
+                />
+                <div className="p-8">
+                  <h3 className="text-2xl font-semibold mb-4">Certificate 4</h3>
+                  <div className="space-y-4">
+                    <p className="text-gray-600">Description for certificate 4</p>
+                    <div className="flex items-center text-sm text-gray-500">
+                      <span className="mr-2">🏆</span>
+                      <span>Issuing Organization</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-gray-50 rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-2">
+                <Image 
+                  src="/certificates/cer5.jpg"
+                  alt="Certificate 5"
+                  width={400} 
+                  height={250}
+                  className="w-full h-64 object-cover"
+                />
+                <div className="p-8">
+                  <h3 className="text-2xl font-semibold mb-4">Certificate 5</h3>
+                  <div className="space-y-4">
+                    <p className="text-gray-600">Description for certificate 5</p>
+                    <div className="flex items-center text-sm text-gray-500">
+                      <span className="mr-2">🏆</span>
+                      <span>Issuing Organization</span>
+                    </div>
                   </div>
                 </div>
               </div>
