@@ -577,6 +577,97 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
+                <div className="p-8">
+                  <h3 className="text-2xl font-semibold mb-4">Certificate 5</h3>
+                  <div className="space-y-4">
+                    <p className="text-gray-600">Description for certificate 5</p>
+                    <div className="flex items-center text-sm text-gray-500">
+                      <span className="mr-2">🏆</span>
+                      <span>Issuing Organization</span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div className="bg-gray-50 rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-2">
+                <Image 
+                  src="/certificates/cer6.jpg"
+                  alt="Certificate 6"
+                  width={400} 
+                  height={250}
+                  className="w-full h-64 object-cover"
+                />
+                <div className="p-8">
+                  <h3 className="text-2xl font-semibold mb-4">Certificate 6</h3>
+                  <div className="space-y-4">
+                    <p className="text-gray-600">Description for certificate 6</p>
+                    <div className="flex items-center text-sm text-gray-500">
+                      <span className="mr-2">🏆</span>
+                      <span>Issuing Organization</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-gray-50 rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-2">
+                <Image 
+                  src="/certificates/cer7.jpg"
+                  alt="Certificate 7"
+                  width={400} 
+                  height={250}
+                  className="w-full h-64 object-cover"
+                />
+                <div className="p-8">
+                  <h3 className="text-2xl font-semibold mb-4">Certificate 7</h3>
+                  <div className="space-y-4">
+                    <p className="text-gray-600">Description for certificate 7</p>
+                    <div className="flex items-center text-sm text-gray-500">
+                      <span className="mr-2">🏆</span>
+                      <span>Issuing Organization</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-gray-50 rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-2">
+                <Image 
+                  src="/certificates/cer8.jpg"
+                  alt="Certificate 8"
+                  width={400} 
+                  height={250}
+                  className="w-full h-64 object-cover"
+                />
+                <div className="p-8">
+                  <h3 className="text-2xl font-semibold mb-4">Certificate 8</h3>
+                  <div className="space-y-4">
+                    <p className="text-gray-600">Description for certificate 8</p>
+                    <div className="flex items-center text-sm text-gray-500">
+                      <span className="mr-2">🏆</span>
+                      <span>Issuing Organization</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-gray-50 rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-2">
+                <Image 
+                  src="/certificates/cer9.jpg"
+                  alt="Certificate 9"
+                  width={400} 
+                  height={250}
+                  className="w-full h-64 object-cover"
+                />
+                <div className="p-8">
+                  <h3 className="text-2xl font-semibold mb-4">Certificate 9</h3>
+                  <div className="space-y-4">
+                    <p className="text-gray-600">Description for certificate 9</p>
+                    <div className="flex items-center text-sm text-gray-500">
+                      <span className="mr-2">🏆</span>
+                      <span>Issuing Organization</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
